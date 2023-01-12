@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import SignUp from "./Pages/SignUp/SignUp";
+import VerifyEmail from "./Pages/VerifyEmail/VerifyEmail";
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="/" element={<SignUp />} />
+					<Route path="/verify" element={<VerifyEmail />} />
 				</Routes>
 			</Router>
 		</div>

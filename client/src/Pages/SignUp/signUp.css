@@ -2,7 +2,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* background-color: aqua; */
+}
+
+.wrap {
+	display: flex;
+	justify-content: center;
+	align-self: center;
 }
 
 .signUp {
@@ -34,7 +39,7 @@
 	height: 800px;
 	left: 62px;
 	top: 112px;
-	margin: 112px 62px;
+	/* margin: 112px 62px; */
 }
 
 .labels {
@@ -83,6 +88,7 @@
 	gap: 32px;
 	width: 480px;
 	height: 70px;
+	margin-top: 30px;
 }
 
 .first-name {
@@ -169,4 +175,251 @@
 	line-height: 20px;
 	letter-spacing: 0.25px;
 	color: #344054;
+}
+
+.email-container > input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 16px;
+	gap: 8px;
+	width: 480px;
+	height: 44px;
+	border: 1px solid #d0d5dd;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	border-radius: 8px;
+}
+
+.phone-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	width: 480px;
+	height: 70px;
+}
+
+.phone-container > p {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.25px;
+	color: #344054;
+}
+
+.phone-container-wrapper {
+	display: flex;
+	flex-flow: row;
+}
+
+#phone-code {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 12px 12px 16px;
+	gap: 4px;
+	width: 72px;
+	height: 44px;
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.25px;
+	border: 1px solid #d0d5dd;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	border-radius: 8px;
+}
+
+.phone-input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 16px 12px 0px;
+	gap: 8px;
+	width: 408px;
+	height: 44px;
+	border: 1px solid #d0d5dd;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	border-radius: 8px;
+}
+
+.create-password {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 6px;
+	width: 480px;
+	height: 70px;
+}
+
+.create-password > p {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.25px;
+	color: #344054;
+}
+
+.create-password > input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 16px;
+	gap: 8px;
+	width: 480px;
+	height: 44px;
+	background: #ffffff;
+	border: 1px solid #d0d5dd;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	border-radius: 8px;
+}
+
+.create-password > span {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #667085;
+}
+
+.confirm-password {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	width: 480px;
+	height: 70px;
+	margin-top: 48px;
+}
+
+.confirm-password > p {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.25px;
+	color: #344054;
+}
+
+.confirm-password > input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 16px;
+	gap: 8px;
+	width: 480px;
+	height: 44px;
+	background: #ffffff;
+	border: 1px solid #d0d5dd;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	border-radius: 8px;
+}
+
+.privacy-agreement {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 12px;
+	width: 480px;
+	height: 20px;
+}
+
+.privacy-agreement > input {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	width: 20px;
+	height: 20px;
+}
+
+.privacy-agreement > p {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.25px;
+	color: #667085;
+}
+
+.signUp-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 20px;
+	gap: 8px;
+	width: 480px;
+	height: 48px;
+	background: #7f56d9;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	border-radius: 8px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+	border-color: transparent;
+	cursor: pointer;
+}
+
+.have-account {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #344054;
+}
+
+.have-account > span {
+	color: #7f56d9;
+}
+
+.signUp-right {
+	position: absolute;
+	width: 740px;
+	height: 1024px;
+	left: 700px;
+	top: 0px;
+}
+
+.first-bg {
+	position: absolute;
+	width: 650px;
+	height: 1024px;
+	left: 90px;
+	top: 0px;
+	background: #f4ebff;
+}
+
+.second-bg {
+	position: absolute;
+	width: 455px;
+	height: 688px;
+	left: 123px;
+	top: 230px;
+	background: #7f56d9;
+}
+
+.image-bg {
+	position: absolute;
+	width: 455px;
+	height: 688px;
+	left: -57px;
+	top: 135px;
+	background: url("../../assets/images/signUp_1.png"), #7f56d9;
 }
