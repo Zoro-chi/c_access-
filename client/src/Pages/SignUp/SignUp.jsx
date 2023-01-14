@@ -1,6 +1,9 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./signUp.css";
+import { register } from "../../api/authRequest";
+import { checkPassRegex } from "../../utils";
 
 const SignUp = () => {
 	const firstName = useRef();
@@ -9,9 +12,23 @@ const SignUp = () => {
 	const phone = useRef();
 	const password = useRef();
 	const confirmPassword = useRef();
+	const navigate = useNavigate();
 
-	const handleSubmit = () => {
-		console.log(firstName.current.value);
+	const handleSubmit = async () => {
+		const user = {
+			firstName: firstName.current.value,
+			lastName: lastName.current.value,
+			email: email.current.value,
+			phone: phone.current.value,
+			password: password.current.value,
+		};
+
+		try {
+			await register(user);
+			navigate("/signIn");
+		} catch (err) {
+			console.log(err.message);
+		}
 	};
 
 	return (

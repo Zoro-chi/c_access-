@@ -1,10 +1,27 @@
 import { useRef } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 import "./signIn.css";
+import { login } from "../../api/authRequest";
 
 const SignIn = () => {
 	const email = useRef();
 	const password = useRef();
+	const navigate = useNavigate();
+
+	const handleSubmit = async () => {
+		const user = {
+			email: email.current.value,
+			password: password.current.value,
+		};
+
+		try {
+			await login(user);
+			navigate("/dashboard");
+		} catch (err) {
+			console.log(err.message);
+		}
+	};
 
 	return (
 		<div className="wrap">
@@ -42,7 +59,10 @@ const SignIn = () => {
 								<span> Forgot your password? </span>
 							</div>
 
-							<button className="signIn-btn"> Sign in </button>
+							<button className="signIn-btn" onClick={handleSubmit}>
+								{" "}
+								Sign in{" "}
+							</button>
 
 							<p className="new-account">
 								New here?<span> Create an account </span>

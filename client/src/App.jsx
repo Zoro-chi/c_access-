@@ -18,7 +18,7 @@ function App() {
 					<Route path="/signIn" element={<SignIn />} />
 					<Route path="/forgotpass" element={<ForgotPassword />} />
 					<Route path="/modal" element={<Modal />} />
-					<Route path="/desktop" element={<Desktop />} />
+					<Route path="/dashboard" element={<Desktop />} />
 				</Routes>
 			</Router>
 		</div>

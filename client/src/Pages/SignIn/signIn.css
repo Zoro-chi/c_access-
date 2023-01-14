@@ -181,6 +181,7 @@
 	line-height: 24px;
 	color: #ffffff;
 	cursor: pointer;
+	border-color: transparent;
 }
 
 .new-account {

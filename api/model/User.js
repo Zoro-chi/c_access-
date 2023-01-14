@@ -16,7 +16,7 @@ const UserSchema = new mongoose.Schema(
 			unique: true,
 		},
 		password: {
-			type: String,
+			type: mongoose.Schema.Types.Mixed,
 			required: true,
 			min: 8,
 		},

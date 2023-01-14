@@ -13,7 +13,6 @@ const authController = {
 			const { valid, reason, validators } = await utils.isEmailValid(req.body.email);
 			const checkDuplicateEmail = await User.findOne({ email: req.body.email });
 			let email;
-			let validatorMsg;
 
 			try {
 				if (valid && !checkDuplicateEmail) {
