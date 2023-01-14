@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import "./signUp.css";
 import { register } from "../../api/authRequest";
@@ -128,9 +128,11 @@ const SignUp = () => {
 							<button className="signUp-btn" type="button" onClick={handleSubmit}>
 								Sign up
 							</button>
-							<p className="have-account">
-								Already have an account? <span> Sign in </span>
-							</p>
+							<Link to={"/signIn"} style={{ textDecoration: "none" }}>
+								<p className="have-account">
+									Already have an account? <span> Sign in </span>
+								</p>
+							</Link>
 						</div>
 					</div>
 				</div>

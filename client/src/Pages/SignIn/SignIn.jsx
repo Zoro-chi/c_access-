@@ -60,13 +60,14 @@ const SignIn = () => {
 							</div>
 
 							<button className="signIn-btn" onClick={handleSubmit}>
-								{" "}
-								Sign in{" "}
+								Sign in
 							</button>
 
-							<p className="new-account">
-								New here?<span> Create an account </span>
-							</p>
+							<Link to={"/"} style={{ textDecoration: "none" }}>
+								<p className="new-account">
+									New here?<span> Create an account </span>
+								</p>
+							</Link>
 						</div>
 					</div>
 				</div>
