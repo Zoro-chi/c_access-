@@ -5,9 +5,10 @@
 }
 
 .wrap {
+	height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-self: center;
+	align-items: center;
 }
 
 .signUp {
@@ -387,6 +388,7 @@
 
 .have-account > span {
 	color: #7f56d9;
+	cursor: pointer;
 }
 
 .signUp-right {

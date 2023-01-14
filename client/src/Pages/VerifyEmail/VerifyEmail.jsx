@@ -10,6 +10,8 @@ const VerifyEmail = () => {
 	const secure5 = useRef();
 	const secure6 = useRef();
 
+	const handleSubmit = () => {};
+
 	return (
 		<div className="wrap">
 			<div className="verify-email">
@@ -37,7 +39,10 @@ const VerifyEmail = () => {
 								Didn't get secure code? <span> Resend </span>
 							</span>
 						</div>
-						<button className="verify-email-submit-btn"> Submit </button>
+						<button className="verify-email-submit-btn" onClick={handleSubmit}>
+							{" "}
+							Submit{" "}
+						</button>
 						<p>
 							<span> Click here </span> to change email address
 						</p>
