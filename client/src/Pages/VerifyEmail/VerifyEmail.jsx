@@ -13,7 +13,7 @@ const VerifyEmail = () => {
 	const navigate = useNavigate();
 
 	const handleSubmit = () => {
-		navigate("/dashboard");
+		navigate("/signIn");
 	};
 
 	return (
