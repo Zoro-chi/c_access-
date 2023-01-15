@@ -55,8 +55,9 @@ const SignIn = () => {
 									required
 									ref={password}
 								/>
-
-								<span> Forgot your password? </span>
+								<Link to={"/forgotpass"} style={{ textDecoration: "none" }}>
+									<span> Forgot your password? </span>
+								</Link>
 							</div>
 
 							<button className="signIn-btn" onClick={handleSubmit}>

@@ -25,7 +25,7 @@ const SignUp = () => {
 
 		try {
 			await register(user);
-			navigate("/signIn");
+			navigate("/verify");
 		} catch (err) {
 			console.log(err.message);
 		}

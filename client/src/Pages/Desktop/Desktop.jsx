@@ -122,9 +122,7 @@ const Desktop = () => {
 								</div>
 							</div>
 							<div className="search">
-								<div className="input">
-									<p> Enter your email </p>
-								</div>
+								<input type="email" className="input" placeholder="Enter your email" />
 								<button> Submit </button>
 							</div>
 						</div>

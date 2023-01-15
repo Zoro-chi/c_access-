@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./verifyEmail.css";
 
@@ -9,8 +10,11 @@ const VerifyEmail = () => {
 	const secure4 = useRef();
 	const secure5 = useRef();
 	const secure6 = useRef();
+	const navigate = useNavigate();
 
-	const handleSubmit = () => {};
+	const handleSubmit = () => {
+		navigate("/dashboard");
+	};
 
 	return (
 		<div className="wrap">
@@ -40,8 +44,7 @@ const VerifyEmail = () => {
 							</span>
 						</div>
 						<button className="verify-email-submit-btn" onClick={handleSubmit}>
-							{" "}
-							Submit{" "}
+							Submit
 						</button>
 						<p>
 							<span> Click here </span> to change email address

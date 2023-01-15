@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 import "./forgotPassword.css";
 
@@ -27,9 +28,11 @@ const ForgotPassword = () => {
 
 							<button className="forgotPassword-btn"> Continue </button>
 
-							<span>
-								Remembered password?<span> Sign In </span>
-							</span>
+							<Link to={"/signIn"} style={{ textDecoration: "none" }}>
+								<span>
+									Remembered password?<span> Sign In </span>
+								</span>
+							</Link>
 						</div>
 					</div>
 				</div>
